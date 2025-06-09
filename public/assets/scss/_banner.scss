@@ -563,7 +563,7 @@
 }
 // Fancy Banner Six
 .fancy-banner-six {
-    background: url(../images/media/img_10.jpg) no-repeat center;
+    /* background: url(../images/media/img_10.jpg) no-repeat center; */
     background-size: cover;
     z-index: 1;
     h2 {
@@ -583,7 +583,7 @@
 // Fancy Banner Seven
 .fancy-banner-seven {
     .bg-wrapper {
-        background: url(../images/media/img_02.jpg) no-repeat center;
+        background: url(../images/gallery/om-oss.png) no-repeat center;
         background-size: cover;
         &:before {
             content: "";

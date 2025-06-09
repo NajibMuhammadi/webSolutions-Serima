@@ -3,18 +3,18 @@ import { Metadata } from "next";
 import Wrapper from "@/layout/wrapper";
 import HeaderTwo from "@/layout/header/header-two";
 import BreadcrumbOne from "@/components/breadcrumb/breadcrumb-one";
-import about_bg from "@/assets/images/media/img_02.jpg";
+import about_bg from "@/assets/images/gallery/om-oss.png";
 import shape from "@/assets/images/shape/shape_25.svg";
 import TextFeatureOne from "@/components/text-feature/text-feature-one";
 import TextFeatureThree from "@/components/text-feature/text-feature-three";
 import FooterOne from "@/layout/footer/footer-one";
 
 export const metadata: Metadata = {
-    title: "Om oss – WebSolutions Serima | Experter på digital utveckling",
+    title: "Om oss – WebSolutions Serima | Kreativa webblösningar för alla",
     description:
-        "Lär känna WebSolutions Serima – ditt team av experter inom webbutveckling, design och digitala lösningar. Vi hjälper företag att växa online med moderna webbupplevelser och skräddarsydda tjänster.",
+        "WebSolutions Serima är ett engagerat team som brinner för att skapa snygga, snabba och smarta webblösningar. Vi hjälper både privatpersoner, företag och organisationer att lyckas digitalt.",
     keywords:
-        "om oss, WebSolutions Serima, webbutveckling, webbdesign, digitala lösningar, digital marknadsföring, företagstillväxt, moderna webbupplevelser",
+        "om oss, WebSolutions Serima, webbutveckling, webbdesign, digitala lösningar, hemsida, webbapp, kreativa webblösningar, digital utveckling",
 };
 
 const AboutUsPage = () => {

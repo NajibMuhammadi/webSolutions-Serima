@@ -10,11 +10,11 @@ import PricingArea from "@/components/pricing/pricing-area";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-    title: "WebSolutions Serima – Skräddarsydd webbdesign & digitala lösningar för företag",
+    title: "WebSolutions Serima – Modern webbdesign & smarta digitala lösningar",
     description:
-        "WebSolutions Serima hjälper företag i Gävle och hela Sverige med moderna hemsidor, webbapplikationer och digital marknadsföring. Vi skapar webblösningar som växer ditt företag online.",
+        "Vi skapar moderna hemsidor, webbappar och digitala lösningar för privatpersoner, föreningar, företag och startups. Med fokus på design, funktion och synlighet online.",
     keywords:
-        "webbdesign, webbutveckling, digitala lösningar, SEO, digital marknadsföring, hemsidor för företag, webbapplikationer, Websolutions Serima, Gävle",
+        "webbdesign, webbutveckling, hemsida, hemsidor, digitala lösningar, SEO, digital marknadsföring, webbappar, WebSolutions Serima, Gävle, responsiv design, Next.js, WordPress",
 };
 
 export default function HomePage() {

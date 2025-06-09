@@ -3,7 +3,7 @@ User-agent: *
 Allow: /
 
 # Host
-Host: https://serimawebsolutions.se
+Host: https://websolutions.serima.se
 
 # Sitemaps
-Sitemap: https://serimawebsolutions.se/sitemap.xml
+Sitemap: https://websolutions.serima.se/sitemap.xml

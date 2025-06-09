@@ -4,7 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 // internal
 import Navbar from "./navbar";
-import logo from "@/assets/images/logo/logo_01.svg";
+import logo from "@/assets/images/logo/logo-1.png";
 import useSticky from "@/hooks/use-sticky";
 
 const HeaderTwo = () => {

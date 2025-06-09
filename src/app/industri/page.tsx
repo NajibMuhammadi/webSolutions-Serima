@@ -3,17 +3,17 @@ import { Metadata } from "next";
 import Wrapper from "@/layout/wrapper";
 import HeaderTwo from "@/layout/header/header-two";
 import BreadcrumbOne from "@/components/breadcrumb/breadcrumb-one";
-import service_bg from "@/assets/images/media/img_32.jpg";
+import service_bg from "@/assets/images/gallery/hero-1.png";
 import shape from "@/assets/images/shape/shape_26.svg";
 import FooterOne from "@/layout/footer/footer-one";
 import ServiceIndustri from "@/components/services/service-industri";
 
 export const metadata: Metadata = {
-    title: "Digitala tjänster för industrin | WebSolutions Serima",
+    title: "Digitala tjänster för industriföretag | WebSolutions Serima",
     description:
-        "Upptäck skräddarsydda digitala lösningar för industriföretag. Vi erbjuder webbdesign, SEO och digital marknadsföring som stärker din industriella verksamhet online.",
+        "Skräddarsydda digitala lösningar för industriföretag. Vi erbjuder webbdesign, SEO och digital marknadsföring som stärker din industriella verksamhet och hjälper ditt företag att växa online.",
     keywords:
-        "digitala tjänster industri, industri webbdesign, SEO för industri, digital marknadsföring industri, webblösningar industri, WebSolutions Serima",
+        "digitala tjänster industri, industri webbdesign, SEO för industri, digital marknadsföring industri, webblösningar industri, industriföretag, WebSolutions Serima",
 };
 
 const ServicePage = () => {

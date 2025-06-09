@@ -71,6 +71,7 @@ const structuredData = {
         contactType: "Customer Service",
         availableLanguage: ["sv"],
     },
+    openingHours: "Mo-Fr 08:00-17:00",
     sameAs: [
         "https://www.facebook.com/websolutions.serima",
         "https://www.instagram.com/websolutions.serima",
