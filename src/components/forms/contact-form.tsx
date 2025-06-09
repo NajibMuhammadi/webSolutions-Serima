@@ -3,7 +3,8 @@ import React from "react";
 import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import * as yup from "yup";
-import ErrorMsg from "../common/error-msg";
+/* import ErrorMsg from '../common/error-msg'; */
+import { notifyError, notifySuccess } from "@/utils/toast";
 
 type FormData = {
     name: string;
@@ -26,6 +27,7 @@ const ContactForm = () => {
     } = useForm<FormData>({
         resolver: yupResolver(schema),
     });
+
     const onSubmit = handleSubmit(async (data) => {
         console.log("Form submission started with data:", data);
         try {
@@ -40,15 +42,23 @@ const ContactForm = () => {
             const result = await res.json();
             console.log("Response JSON:", result);
 
-            if (!res.ok) {
+            if (!res.ok || result.error) {
                 console.log("Notify error triggered");
+                notifyError("Failed to send message. Please try again later.");
                 return;
             }
+
+            console.log("Resetting form and notifying success");
+            notifySuccess(
+                "Message sent successfully! We will get back to you soon."
+            );
             reset();
         } catch (error) {
             console.error("Catch block error:", error);
+            notifyError("Something went wrong.");
         }
     });
+
     return (
         <form id="contact-form" onSubmit={onSubmit}>
             <div className="messages"></div>
@@ -61,11 +71,15 @@ const ContactForm = () => {
                             placeholder="Your Name*"
                             {...register("name")}
                             id="name"
-                            name="name"
                         />
-                        <div className="help-block with-errors">
-                            <ErrorMsg msg={errors.name?.message!} />
-                        </div>
+                        {errors.name?.message && (
+                            <div
+                                className="error-message"
+                                style={{ color: "red" }}
+                            >
+                                {errors.name.message}
+                            </div>
+                        )}
                     </div>
                 </div>
                 <div className="col-12">
@@ -76,11 +90,15 @@ const ContactForm = () => {
                             placeholder="Email Address*"
                             {...register("email")}
                             id="email"
-                            name="email"
                         />
-                        <div className="help-block with-errors">
-                            <ErrorMsg msg={errors.email?.message!} />
-                        </div>
+                        {errors.email?.message && (
+                            <div
+                                className="error-message"
+                                style={{ color: "red" }}
+                            >
+                                {errors.email.message}
+                            </div>
+                        )}
                     </div>
                 </div>
                 <div className="col-12">
@@ -89,11 +107,15 @@ const ContactForm = () => {
                             placeholder="Your message*"
                             {...register("message")}
                             id="message"
-                            name="message"
                         ></textarea>
-                        <div className="help-block with-errors">
-                            <ErrorMsg msg={errors.message?.message!} />
-                        </div>
+                        {errors.message?.message && (
+                            <div
+                                className="error-message"
+                                style={{ color: "red" }}
+                            >
+                                {errors.message.message}
+                            </div>
+                        )}
                     </div>
                 </div>
                 <div className="col-12">

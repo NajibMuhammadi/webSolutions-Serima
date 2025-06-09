@@ -24,20 +24,20 @@ function UpperCardItem({icon,title,subtitle}:{icon:StaticImageData;title:string;
 }
 
 const BlockFeatureOne = ({style_2=false}:{style_2?:boolean}) => {
-  const service_items = service_data.filter(s => s.page === 'home-2')
+  const service_items = service_data.filter(s => s.page === 'home-1')
   return (
    <div className={`block-feature-one position-relative ${style_2?'light-bg-deep mt-150 lg-mt-80 pt-120 lg-pt-60 pb-130 lg-pb-60':'pt-75'}`}>
 			{!style_2&&<div className="upper-wrapper mb-110 lg-mb-80">
 				<div className="container">
 					<div className="row">
 						<div className="col-lg-4 wow fadeInUp">
-              <UpperCardItem icon={icon_1} title='Fees' subtitle='cupidatat non proident, sunt in culpa qui officia deserunt' />
+              <UpperCardItem icon={icon_1} title='CMS-lösningar' subtitle='Snygga, lättskötta hemsidor – full kontroll utan att offra design eller prestanda.' />
 						</div>
 						<div className="col-lg-4 wow fadeInUp" data-wow-delay="0.1s">
-            <UpperCardItem icon={icon_2} title='Expert Advisor' subtitle='Elit esse cillum dolore eu fugiat nulla pariatur' />
+            <UpperCardItem icon={icon_2} title='Mobilanpassning & prestanda' subtitle='Vi optimerar dina sidor för snabb laddning och sömlös upplevelse på alla enheter – mobil, tablet och desktop.' />
 						</div>
 						<div className="col-lg-4 wow fadeInUp" data-wow-delay="0.2s">
-            <UpperCardItem icon={icon_3} title='Effective Support' subtitle='quis nostrud exerct ullamo ea nisi ut aliqui com dolor' />
+            <UpperCardItem icon={icon_3} title='Support och vidareutveckling' subtitle='Vi finns kvar efter lansering – med support, uppdateringar och vidareutveckling när behoven växer.' />
 						</div>
 					</div>
 				</div>
@@ -48,7 +48,7 @@ const BlockFeatureOne = ({style_2=false}:{style_2?:boolean}) => {
 					<div className="row">
 						<div className="col-md-6">
 							<div className="title-one text-center text-md-start mb-30 sm-mb-10">
-								<h2>Provide quality Services.</h2>
+								<h2>Våra tjänster</h2>
 							</div>
 						</div>
 					</div>
@@ -59,7 +59,7 @@ const BlockFeatureOne = ({style_2=false}:{style_2?:boolean}) => {
 								<Image src={item.icon} alt="icon" className="lazy-img icon me-auto"/>
 								<h4 className="fw-bold mt-30 mb-25">{item.title}</h4>
 								<p className="mb-20">{item.desc}</p>
-								<Link href="/service-details" className="arrow-btn tran3s mt-auto stretched-link">
+								<Link href="/tjanster" className="arrow-btn tran3s mt-auto stretched-link">
                   <Image src={arrow} alt="arrow" className="lazy-img"/>
                 </Link>
 							</div>
@@ -68,9 +68,9 @@ const BlockFeatureOne = ({style_2=false}:{style_2?:boolean}) => {
 					</div>
 
 					<div className="section-subheading sm-mt-40">
-						<p className="text-lg">Inciddnt ut labore et dolor magna aliu. enim ad mim venam, quis nostru </p>
-						<Link href="/service-v1" className="btn-three icon-link">
-							<span>See All Services</span>
+						<p className="text-lg">Från idé till färdig digital lösning </p>
+						<Link href="/tjanster" className="btn-three icon-link">
+							<span>Alla tjänster</span>
 							<Image src={arrow} alt="arrow" className="lazy-img icon ms-1"/>
 						</Link>
 					</div>

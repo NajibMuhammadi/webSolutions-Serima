@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://serimawebsolutions.se
+
+# Sitemaps
+Sitemap: https://serimawebsolutions.se/sitemap.xml
