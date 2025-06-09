@@ -1,5 +1,5 @@
 // Card One
-.card-style-one  {
+.card-style-one {
     .icon {
         background: #fff;
         width: 62px;
@@ -17,7 +17,7 @@
     position: relative;
     padding: 50px 40px 48px;
     background: #fff;
-    border: 1px solid #EBF3EE;
+    border: 1px solid #ebf3ee;
     border-radius: 20px;
     .icon {
         height: 50px;
@@ -46,18 +46,18 @@
 // Card Four
 .card-style-four {
     .media:before {
-        content: '';
+        content: "";
         position: absolute;
         width: 100%;
         height: 100%;
-        top:0;
+        top: 0;
         left: 0;
         background: rgba($color: $color-two, $alpha: 0.7);
         opacity: 0;
         @include transition(0.3s);
     }
     .media:after {
-        content: '';
+        content: "";
         position: absolute;
         width: 50px;
         height: 50px;
@@ -79,7 +79,8 @@
         }
     }
     &:hover {
-        .media::before,.round-btn {
+        .media::before,
+        .round-btn {
             opacity: 1;
         }
     }
@@ -91,7 +92,7 @@
     }
     .main-count {
         font-size: 68px;
-        color: #FFDB1E;
+        color: #ffdb1e;
         border-top: 1px dashed rgba($color: #fff, $alpha: 0.25);
         margin-top: 42px;
         padding-top: 25px;
@@ -108,7 +109,8 @@
     padding: 50px 40px 48px;
     background: #fff;
     border-radius: 30px;
-    &:hover, &.active {
+    &:hover,
+    &.active {
         background: $light-bg-two;
         .arrow-btn {
             opacity: 1;
@@ -130,11 +132,11 @@
     padding: 40px 30px 45px;
     background: #fff;
     border-radius: 30px;
-    
+
     .icon {
         width: 70px;
         height: 70px;
-        background: #FFE86B;
+        background: #ffe86b;
     }
     p {
         font-size: 18px;
@@ -144,7 +146,8 @@
         opacity: 0.3;
         width: 34px;
     }
-    &:hover, &.active {
+    &:hover,
+    &.active {
         box-shadow: 0px 35px 70px rgba(0, 0, 0, 0.04);
         .arrow-btn {
             opacity: 1;
@@ -160,7 +163,7 @@
     background: #fff;
     position: relative;
     &:hover {
-        box-shadow: 0px 10px 20px rgba(8,32,26,.04);
+        box-shadow: 0px 10px 20px rgba(8, 32, 26, 0.04);
     }
     .icon {
         height: 55px;
@@ -171,12 +174,12 @@
 }
 // Card Nine
 .card-style-nine {
-    background: #F6F6F6;
+    background: #f6f6f6;
     padding: 50px 55px 0;
     .icon {
         width: 60px;
         height: 60px;
-        background: #FFE86B;
+        background: #ffe86b;
     }
     h3 {
         font-size: 32px;
@@ -194,11 +197,11 @@
         z-index: 1;
         margin-bottom: -16px;
         &:before {
-            content: '';
+            content: "";
             position: absolute;
             width: 100%;
             height: 13px;
-            background: #C5FF4A;
+            background: #c5ff4a;
             left: 0;
             bottom: 19%;
             z-index: -1;
@@ -237,7 +240,7 @@
     .icon {
         width: 55px;
         height: 55px;
-        border: 1px solid #E0E0E0;
+        border: 1px solid #e0e0e0;
     }
     .arrow-btn {
         opacity: 0.3;
@@ -245,7 +248,7 @@
     }
     &:hover {
         .icon {
-            background: #E0E0E0;
+            background: #e0e0e0;
         }
     }
 }
@@ -258,7 +261,7 @@
     position: relative;
     z-index: 1;
     &:before {
-        content: '';
+        content: "";
         position: absolute;
         width: 48px;
         height: 2px;
@@ -292,11 +295,11 @@
 // Card Fourteen
 .card-style-fourteen {
     .media:before {
-        content: '';
+        content: "";
         position: absolute;
         width: 100%;
         height: 100%;
-        top:0;
+        top: 0;
         left: 0;
         background: rgba($color: $color-six, $alpha: 0.3);
         opacity: 0;
@@ -316,12 +319,13 @@
         }
     }
     &:hover {
-        .media::before,.round-btn {
+        .media::before,
+        .round-btn {
             opacity: 1;
         }
     }
     p {
-        color: #B6B6B6;
+        color: #b6b6b6;
     }
 }
 // Card Fifteen
@@ -333,11 +337,11 @@
     text-align: center;
     padding-bottom: 30px;
     .media:before {
-        content: '';
+        content: "";
         position: absolute;
         width: 100%;
         height: 100%;
-        top:0;
+        top: 0;
         left: 0;
         background: rgba($color: $color-two, $alpha: 0.3);
         opacity: 0;
@@ -357,7 +361,8 @@
         }
     }
     &:hover {
-        .media::before,.round-btn {
+        .media::before,
+        .round-btn {
             opacity: 1;
         }
     }
@@ -365,7 +370,7 @@
         font-size: 22px;
     }
     p {
-        color: #B6B6B6;
+        color: #b6b6b6;
     }
 }
 // Card Sixteen
@@ -374,13 +379,14 @@
     .icon {
         width: 60px;
         height: 60px;
-        background: #FFE86B;
+        background: #ffe86b;
     }
     .text {
         width: calc(100% - 60px);
         padding-left: 30px;
     }
-    &:hover, &.active {
+    &:hover,
+    &.active {
         .icon {
             background: $color-one;
         }
@@ -389,24 +395,24 @@
     &.arrow:after {
         content: url(../images/shape/shape_30.svg);
         position: absolute;
-        top:11px;
+        top: 11px;
         left: -99px;
     }
     &.arrow:after {
         left: auto;
-        right:-99px;
+        right: -99px;
     }
 }
 // Card Seventeen
 .card-style-seventeen {
     padding: 30px 30px 40px;
     border-radius: 15px;
-    border: 1px solid #E6E6E6;
+    border: 1px solid #e6e6e6;
     .icon {
         width: 70px;
         height: 70px;
         padding: 15px;
-        background: #F6F6F6;
+        background: #f6f6f6;
     }
     .text {
         width: calc(100% - 70px);
@@ -430,16 +436,16 @@
 .card-style-eighteen {
     padding: 5px 35px 0;
     border-radius: 20px;
-    background: #1F5E59;
+    background: #1f5e59;
     z-index: 1;
     &:before {
-        content: '';
+        content: "";
         position: absolute;
         width: 100%;
         height: 100%;
         left: 0;
         bottom: 0;
-        background: url(../images/assets/bg_08.svg) no-repeat right bottom;
+        /* background: url(../images/assets/bg_08.svg) no-repeat right bottom; */
         background-size: cover;
         z-index: -1;
     }
@@ -495,7 +501,7 @@
         .arrow-btn {
             position: absolute;
             right: 50px;
-            top:40px;
+            top: 40px;
         }
     }
     &:hover {
@@ -541,7 +547,7 @@
     .price-banner {
         padding: 8px 10px;
         border-radius: 15px;
-        background: #F4F4F4;
+        background: #f4f4f4;
         margin-bottom: 30px;
         .price {
             font-size: 52px;
@@ -571,11 +577,11 @@
     .action-btn {
         max-width: 335px;
         margin: auto auto 0;
-        border: 1px solid #DCDCDC;
+        border: 1px solid #dcdcdc;
         border-radius: 30px;
         padding: 10px 25px;
         font-size: 18px;
-        color: #8B8B8B;
+        color: #8b8b8b;
         a {
             font-weight: 500;
             color: $heading;

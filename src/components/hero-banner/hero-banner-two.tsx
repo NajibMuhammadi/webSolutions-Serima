@@ -4,12 +4,14 @@ import Image from "next/image";
 import Slider from "react-slick";
 import Link from "next/link";
 // internal
-import bg_1 from "@/assets/images/gallery/img_04.jpg";
-import bg_2 from "@/assets/images/gallery/img_05.jpg";
+import bg_1 from "@/assets/images/gallery/hero-4.png";
+import bg_2 from "@/assets/images/gallery/hero-2.png";
+import bg_3 from "@/assets/images/gallery/hero-1.png";
+
 import icon from "@/assets/images/icon/icon_02.svg";
 
 // slider bg
-const slider_bg = [bg_1, bg_2];
+const slider_bg = [bg_1, bg_2, bg_3];
 // slider setting
 const slider_setting = {
     dots: false,

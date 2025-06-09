@@ -52,7 +52,7 @@
                 border-radius: 35px;
                 background: rgba($color: #fff, $alpha: 0.1);
                 @include placeholder {
-                    color: rgba($color: #fff, $alpha: 0.6); 
+                    color: rgba($color: #fff, $alpha: 0.6);
                 }
             }
             button {
@@ -65,7 +65,7 @@
                 color: $color-two;
                 position: absolute;
                 right: 0;
-                top:2px;
+                top: 2px;
                 @include transition(0.2s);
                 &:hover {
                     background: #fff;
@@ -94,7 +94,7 @@
 
 // Footer Two
 .footer-two {
-    background: url(../images/media/img_18.jpg) no-repeat center bottom;
+    /* background: url(../images/media/img_18.jpg) no-repeat center bottom; */
     background-size: cover;
     position: relative;
     z-index: 1;
@@ -116,30 +116,35 @@
         }
     }
     &:before {
-        content: '';
+        content: "";
         position: absolute;
         width: 100%;
         height: 100%;
         bottom: 0;
         left: 0;
         z-index: -1;
-        background: linear-gradient(180deg, #F5F8F7 0%, rgba(240, 243, 242, 0.58) 69.88%, rgba(238, 241, 240, 0.15) 100%);
+        background: linear-gradient(
+            180deg,
+            #f5f8f7 0%,
+            rgba(240, 243, 242, 0.58) 69.88%,
+            rgba(238, 241, 240, 0.15) 100%
+        );
     }
     .bg-wrapper {
-        background: #FFFFFF;
+        background: #ffffff;
         box-shadow: 0px 35px 70px rgba(0, 0, 0, 0.04);
         border-radius: 30px;
         z-index: 1;
         padding: 70px 40px 40px;
 
         .shape_01 {
-            bottom:12%;
+            bottom: 12%;
             right: 33%;
             width: 2.3%;
             min-width: 28px;
         }
         .shape_02 {
-            bottom:38%;
+            bottom: 38%;
             left: 25%;
             width: 3.8%;
             min-width: 28px;
@@ -185,7 +190,7 @@
         bottom: 64px;
     }
 }
-// Footer Three 
+// Footer Three
 .footer-three {
     padding: 75px 0 0;
     position: relative;
@@ -194,9 +199,9 @@
         width: 350px;
         height: 350px;
         padding: 15px 15px;
-        background: #FFF6C6;
+        background: #fff6c6;
         &.color-two {
-            background: #F6FFDD;
+            background: #f6ffdd;
         }
     }
     .footer-intro p a {
@@ -267,13 +272,13 @@
 .footer-large-wrapper {
     z-index: 1;
     &:before {
-        content: '';
+        content: "";
         position: absolute;
         width: 100%;
         right: 0;
         bottom: 0;
-        top:-20%;
-        background: url(../images/assets/bg_04.svg) no-repeat center bottom;
+        top: -20%;
+        /* background: url(../images/assets/bg_04.svg) no-repeat center bottom; */
         background-size: cover;
         z-index: -1;
     }
@@ -307,14 +312,14 @@
         font-weight: 500;
         margin-bottom: 15px;
         &:before {
-            content: '';
+            content: "";
             position: absolute;
             left: 0;
             bottom: -6px;
             width: 20px;
             height: 2px;
             border-radius: 10px;
-            background: #D3FF76;
+            background: #d3ff76;
         }
     }
     .footer-nav-link a {
@@ -366,13 +371,13 @@
     z-index: 1;
     overflow: hidden;
     &:before {
-        content: '';
+        content: "";
         position: absolute;
         width: 100%;
         height: 100%;
         bottom: 0;
         left: 0;
-        background: url(../images/assets/bg_07.svg) no-repeat center bottom;
+        /* background: url(../images/assets/bg_07.svg) no-repeat center bottom; */
         background-size: cover;
         z-index: -1;
     }
@@ -403,7 +408,8 @@
             font-size: 55px;
             color: $color-six;
             background: #101010;
-            &:hover, &:focus {
+            &:hover,
+            &:focus {
                 background: $color-two;
                 color: #fff;
             }

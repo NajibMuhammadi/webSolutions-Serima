@@ -2,7 +2,6 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 // internal
-import icon_1 from "@/assets/images/icon/icon_09.svg";
 import shape from "@/assets/images/shape/shape_05.svg";
 import service_data from "@/data/service-data";
 

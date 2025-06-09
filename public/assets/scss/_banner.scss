@@ -3,20 +3,24 @@
     background: $color-two;
     z-index: 9;
     &::before {
-        content: '';
+        content: "";
         position: absolute;
         width: 100%;
         height: 100%;
         left: 0px;
         top: 0px;
-        background: linear-gradient(180deg, rgba(0, 0, 0, 0.53) 0%, rgba(0, 0, 0, 0) 100%);
+        background: linear-gradient(
+            180deg,
+            rgba(0, 0, 0, 0.53) 0%,
+            rgba(0, 0, 0, 0) 100%
+        );
     }
     .hero-slider-one {
         position: absolute;
         width: 100%;
         height: 100%;
         left: 0;
-        top:0;
+        top: 0;
         z-index: -1;
         .hero-img {
             position: absolute;
@@ -28,7 +32,11 @@
             background-size: cover;
             background-repeat: no-repeat;
         }
-        .slick-list,.slick-track,.item {height: 100%;}
+        .slick-list,
+        .slick-track,
+        .item {
+            height: 100%;
+        }
     }
 
     .hero-heading {
@@ -45,7 +53,7 @@
         width: 105px;
         height: 105px;
         border: 2px solid #fff;
-        top:20%;
+        top: 20%;
         left: 4%;
         z-index: 1;
         &:hover {
@@ -89,33 +97,32 @@
         button {
             position: absolute;
             right: 0;
-            top:0;
+            top: 0;
             bottom: 0;
             border-radius: 50px;
-
         }
     }
     .shape_01 {
-        top:22%;
+        top: 22%;
         left: 7%;
         width: 3.1%;
         min-width: 30px;
         animation: rotated 50s infinite linear;
     }
     .shape_02 {
-        top:40%;
+        top: 40%;
         right: 7%;
         width: 1.8%;
         min-width: 22px;
         animation: rotated 48s infinite linear;
     }
     .shape_03 {
-        top:36%;
+        top: 36%;
         left: 0;
         width: 15.57%;
     }
     .shape_04 {
-        top:49%;
+        top: 49%;
         right: 0;
         width: 15%;
     }
@@ -146,15 +153,15 @@
         .round-bg {
             position: absolute;
             z-index: -2;
-            top:0;
+            top: 0;
             left: 50%;
-            transform: translate(-50% , -7%);
+            transform: translate(-50%, -7%);
         }
     }
 }
 // Hero Banner Four
 .hero-banner-four {
-    background: url(../images/assets/bg_01.svg) no-repeat center bottom;
+    background: url(../images/assets/ils_04.svg) no-repeat center bottom;
     background-size: cover;
     z-index: 1;
     .hero-heading {
@@ -213,10 +220,10 @@
     }
     .media-wrapper {
         position: absolute;
-        background: url(../images/assets/bg_05.svg) no-repeat left top;
+        background: url(../images/assets/ils_04.svg) no-repeat left top;
         background-size: cover;
         border-radius: 0 30px 30px 0;
-        top:0;
+        top: 0;
         bottom: 0;
         right: 0;
         z-index: -1;
@@ -228,7 +235,7 @@
             z-index: 1;
         }
         .shape_02 {
-            top:34%;
+            top: 34%;
             left: 0;
             transform: translateX(-50%);
             width: 19.34%;
@@ -243,7 +250,7 @@
         color: $color-seven;
     }
     .media-wrapper {
-        background: url(../images/media/img_48.jpg) no-repeat center;
+        background: url(../images/media/img_03.jpg) no-repeat center;
         background-size: cover;
         border-radius: 20px;
         max-width: 536px;
@@ -285,23 +292,31 @@
     background: $color-two;
     z-index: 9;
     &::after {
-        content: '';
+        content: "";
         position: absolute;
         width: 100%;
         height: 50%;
         left: 0px;
         bottom: 0;
-        background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.87) 100%);
+        background: linear-gradient(
+            180deg,
+            rgba(0, 0, 0, 0) 0%,
+            rgba(0, 0, 0, 0.87) 100%
+        );
         z-index: -1;
     }
     &::before {
-        content: '';
+        content: "";
         position: absolute;
         width: 100%;
         height: 20%;
         left: 0px;
         top: 0;
-        background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.99) 100%);
+        background: linear-gradient(
+            180deg,
+            rgba(0, 0, 0, 0) 0%,
+            rgba(0, 0, 0, 0.99) 100%
+        );
         mix-blend-mode: overlay;
         transform: rotate(-180deg);
         z-index: -1;
@@ -311,7 +326,7 @@
         width: 100%;
         height: 100%;
         left: 0;
-        top:0;
+        top: 0;
         z-index: -2;
         .hero-img {
             position: absolute;
@@ -323,7 +338,11 @@
             background-size: cover;
             background-repeat: no-repeat;
         }
-        .slick-list,.slick-track,.item {height: 100%;}
+        .slick-list,
+        .slick-track,
+        .item {
+            height: 100%;
+        }
     }
     .hero-heading {
         font-weight: 700;
@@ -367,10 +386,10 @@
     padding-left: 12px;
     padding-right: 12px;
     &:after {
-        content: '';
+        content: "";
         position: absolute;
         right: 0;
-        top:0;
+        top: 0;
         bottom: 0;
         left: 50%;
         background: $color-one;
@@ -401,16 +420,15 @@
     padding: 80px 0;
     z-index: 1;
     &:before {
-        content: '';
+        content: "";
         position: absolute;
         left: 0;
-        top:0;
+        top: 0;
         width: 100%;
         height: 100%;
         z-index: -1;
         background: #174034;
         mix-blend-mode: darken;
-
     }
     .title-one h2 {
         font-size: 58px;
@@ -419,7 +437,7 @@
         width: 200px;
         height: 200px;
         padding: 16px;
-        background: #FFE86B;
+        background: #ffe86b;
         &:hover {
             transform: rotate(15deg);
         }
@@ -430,14 +448,14 @@
 }
 // Fancy Banner Four
 .fancy-banner-four {
-    background: #DCEFF0;
+    background: #dceff0;
     z-index: 1;
     &:before {
-        content: '';
+        content: "";
         position: absolute;
         width: 100%;
         height: 100%;
-        top:0;
+        top: 0;
         right: 0;
         z-index: -1;
         background: url(../images/shape/shape_10.svg) no-repeat left bottom;
@@ -450,11 +468,11 @@
         padding-left: 42px;
         margin-bottom: 13px;
         &:after {
-            content: '\F633';
+            content: "\F633";
             position: absolute;
             font-family: $bootstrapFont;
             font-size: 0.95em;
-            top:3px;
+            top: 3px;
             left: 0;
             color: #000;
         }
@@ -464,7 +482,7 @@
         height: 58px;
         padding: 0 5px 0 25px;
         margin: 10px 20px 0 0;
-        background: #1B1B1B;
+        background: #1b1b1b;
         color: #fff;
         text-align: left;
         transition: all 0.3s ease-in-out;
@@ -472,7 +490,9 @@
             transform: translateY(-5px);
             box-shadow: -5px 10px 30px rgba(0, 0, 0, 0.05);
         }
-        .icon {margin-right: 14px;}
+        .icon {
+            margin-right: 14px;
+        }
         span {
             font-size: 12px;
             color: rgba(255, 255, 255, 0.6);
@@ -486,15 +506,19 @@
         }
         &.ios-button {
             background: #fff;
-            border-color: #DADADA;
-            span {color: #999999;}
-            strong {color: #000;}
+            border-color: #dadada;
+            span {
+                color: #999999;
+            }
+            strong {
+                color: #000;
+            }
         }
-      }
+    }
 }
 // Fancy Banner Five
 .fancy-banner-five {
-    background: url(../images/media/img_31.jpg) no-repeat center;
+    background: url(../images/media/img_03.jpg) no-repeat center;
     background-size: cover;
     z-index: 1;
     &.no-bg {
@@ -503,7 +527,7 @@
             display: none;
         }
         .bg-wrapper {
-            background: url(../images/media/img_33.jpg) no-repeat center;
+            background: url(../images/media/img_03.jpg) no-repeat center;
             background-size: cover;
             .video-icon {
                 width: 185px;
@@ -513,17 +537,15 @@
         }
     }
     &:before {
-        content: '';
+        content: "";
         position: absolute;
         left: 0;
-        top:0;
+        top: 0;
         width: 100%;
         height: 100%;
         z-index: -1;
-        background: #113D2F;
+        background: #113d2f;
         mix-blend-mode: hard-light;
-
-
     }
     h2 {
         font-size: 100px;
@@ -533,7 +555,7 @@
         width: 200px;
         height: 200px;
         padding: 22px;
-        background: #FFE86B;
+        background: #ffe86b;
         &:hover {
             transform: rotate(15deg);
         }
@@ -541,7 +563,7 @@
 }
 // Fancy Banner Six
 .fancy-banner-six {
-    background: url(../images/media/img_34.jpg) no-repeat center;
+    background: url(../images/media/img_10.jpg) no-repeat center;
     background-size: cover;
     z-index: 1;
     h2 {
@@ -552,7 +574,7 @@
         width: 200px;
         height: 200px;
         padding: 22px;
-        background: #FFE86B;
+        background: #ffe86b;
         &:hover {
             transform: rotate(15deg);
         }
@@ -561,27 +583,36 @@
 // Fancy Banner Seven
 .fancy-banner-seven {
     .bg-wrapper {
-        background: url(../images/media/img_50.jpg) no-repeat center;
+        background: url(../images/media/img_02.jpg) no-repeat center;
         background-size: cover;
         &:before {
-            content: '';
+            content: "";
             position: absolute;
             left: 0;
             right: 0;
-            top:0;
+            top: 0;
             height: 70%;
-            background: linear-gradient(180deg, rgba(0, 0, 0, 0) 14.17%, rgba(0, 0, 0, 0.8) 101.25%);
+            background: linear-gradient(
+                180deg,
+                rgba(0, 0, 0, 0) 14.17%,
+                rgba(0, 0, 0, 0.8) 101.25%
+            );
             transform: rotate(-180deg);
             z-index: -1;
         }
         &:after {
-            content: '';
+            content: "";
             position: absolute;
             left: 0;
             right: 0;
-            bottom:0;
+            bottom: 0;
             height: 70%;
-            background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.58) 47.84%, rgba(0, 0, 0, 0.87) 100%);
+            background: linear-gradient(
+                180deg,
+                rgba(0, 0, 0, 0) 0%,
+                rgba(0, 0, 0, 0.58) 47.84%,
+                rgba(0, 0, 0, 0.87) 100%
+            );
             z-index: -1;
         }
         li {
@@ -596,21 +627,21 @@
             position: relative;
 
             &:before {
-                content: '';
+                content: "";
                 position: absolute;
                 width: 24px;
                 height: 24px;
                 border-radius: 50%;
                 background: $color-two;
                 left: 27px;
-                top:27px;
+                top: 27px;
                 @include transition(0.2s);
             }
             &:after {
-                content: '\F633';
+                content: "\F633";
                 position: absolute;
                 font-family: $bootstrapFont;
-                top:21px;
+                top: 21px;
                 left: 31px;
                 color: #fff;
                 font-size: 16px;
@@ -620,7 +651,7 @@
                 background: $color-one;
             }
             &:hover:after {
-                color:#000;
+                color: #000;
             }
         }
         .shape_01 {
@@ -634,7 +665,7 @@
 // Fancy Banner Eight
 .fancy-banner-eight {
     .bg-wrapper {
-        background: #F3F8F7;
+        background: #f3f8f7;
         padding: 30px 75px 0;
     }
     .media-wrapper {
@@ -656,10 +687,10 @@
     .main-wrapper {
         padding: 50px 0 45px;
         &.top-border {
-            border-top: 1px solid #E2E2E2;
+            border-top: 1px solid #e2e2e2;
         }
         &.bottom-border {
-            border-bottom: 1px solid #E2E2E2;
+            border-bottom: 1px solid #e2e2e2;
         }
     }
     h2 {
@@ -672,7 +703,7 @@
             font-size: 18px;
             padding: 0 30px;
             height: 60px;
-            background: #F6F6F6;
+            background: #f6f6f6;
             border: none;
             border-radius: 35px;
         }
@@ -683,12 +714,14 @@
             font-size: 28px;
             color: #fff;
             background: #101010;
-            &:hover, &:focus {
+            &:hover,
+            &:focus {
                 background: $color-two;
             }
             &.color-two {
                 background: $color-two;
-                &:hover, &:focus {
+                &:hover,
+                &:focus {
                     background: #000;
                 }
             }
@@ -726,24 +759,32 @@
     background-size: cover;
     z-index: 1;
     &::before {
-        content: '';
+        content: "";
         position: absolute;
         width: 100%;
         height: 35%;
-        top:0;
+        top: 0;
         left: 0;
         z-index: -1;
-        background: linear-gradient(180deg, rgba(0, 0, 0, 0.53) 0%, rgba(0, 0, 0, 0) 100%);
+        background: linear-gradient(
+            180deg,
+            rgba(0, 0, 0, 0.53) 0%,
+            rgba(0, 0, 0, 0) 100%
+        );
     }
     &::after {
-        content: '';
+        content: "";
         position: absolute;
         width: 100%;
         height: 100%;
-        top:0;
+        top: 0;
         left: 0;
         z-index: -1;
-        background: linear-gradient(121.31deg, rgba(0, 0, 0, 0) 0.55%, rgba(0, 0, 0, 0.88) 98.35%);
+        background: linear-gradient(
+            121.31deg,
+            rgba(0, 0, 0, 0) 0.55%,
+            rgba(0, 0, 0, 0.88) 98.35%
+        );
     }
     .hero-heading {
         font-weight: 700;
@@ -765,7 +806,10 @@
         li {
             color: rgba($color: #fff, $alpha: 0.5);
             margin-right: 5px;
-            &:last-child {margin: 0; color: #fff;}
+            &:last-child {
+                margin: 0;
+                color: #fff;
+            }
             a {
                 @include transition(0.2s);
                 &:hover {
@@ -791,7 +835,7 @@
 .inner-banner-two {
     z-index: 1;
     .pager {
-        border-bottom: 1px solid #0A4020;
+        border-bottom: 1px solid #0a4020;
         padding-bottom: 2px;
         li {
             color: #000;
