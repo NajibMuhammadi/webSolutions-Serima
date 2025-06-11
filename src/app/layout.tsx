@@ -92,6 +92,10 @@ export default function RootLayout({
                 <meta name="author" content="WebSolutions Serima" />
                 <link rel="canonical" href="https://websolutions.serima.se" />
                 <link rel="icon" href={favicon.src} />
+                <meta
+                    name="viewport"
+                    content="width=device-width, initial-scale=1, maximum-scale=1"
+                />
                 {/* Structured data for SEO */}
                 <script
                     id="structured-data"
