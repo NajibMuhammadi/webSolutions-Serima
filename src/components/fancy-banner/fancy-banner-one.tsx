@@ -12,10 +12,10 @@ const FancyBannerOne = () => {
                 <div className="col-md-6">
                     <div className="ps-xl-5 ps-md-4 pe-xxl-5 d-flex align-items-center justify-content-between">
                         <div>
-                            <h3 className="fw-bold">15% Rabatt</h3>
+                            <h3 className="fw-bold">10% Rabatt</h3>
                             <p className="text-md m0">
                                 Serima AB satsar nu även på webbutveckling – få
-                                15% rabatt på din första beställning
+                                10% rabatt på din första beställning
                             </p>
                         </div>
                         {/* <Image

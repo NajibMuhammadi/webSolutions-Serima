@@ -13,9 +13,20 @@ type FormData = {
 };
 
 const schema = yup.object().shape({
-    name: yup.string().required().label("Name"),
-    email: yup.string().required().email().label("Email"),
-    message: yup.string().required().min(10).label("Message"),
+    name: yup
+        .string()
+        .required("Ditt namn är obligatoriskt")
+        .label("Ditt namn"),
+    email: yup
+        .string()
+        .required("Din e-postadress är obligatorisk")
+        .email()
+        .label("Din e-postadress"),
+    message: yup
+        .string()
+        .required("Ditt meddelande är obligatoriskt")
+        .min(10, "Meddelandet måste vara minst 10 tecken långt")
+        .label("Ditt meddelande"),
 });
 
 const ContactForm = () => {
@@ -29,7 +40,6 @@ const ContactForm = () => {
     });
 
     const onSubmit = handleSubmit(async (data) => {
-        console.log("Form submission started with data:", data);
         try {
             const res = await fetch("/api/send", {
                 method: "POST",
@@ -37,25 +47,19 @@ const ContactForm = () => {
                 body: JSON.stringify(data),
             });
 
-            console.log("Response status:", res.status);
-
             const result = await res.json();
-            console.log("Response JSON:", result);
 
             if (!res.ok || result.error) {
-                console.log("Notify error triggered");
-                notifyError("Failed to send message. Please try again later.");
+                notifyError("Meddelandet kunde inte skickas.");
                 return;
             }
 
-            console.log("Resetting form and notifying success");
             notifySuccess(
-                "Message sent successfully! We will get back to you soon."
+                "Ditt meddelande har skickats framgångsrikt! Vi återkommer snart."
             );
             reset();
         } catch (error) {
-            console.error("Catch block error:", error);
-            notifyError("Something went wrong.");
+            notifyError("Ett fel uppstod vid sändning av meddelandet.");
         }
     });
 
@@ -68,7 +72,7 @@ const ContactForm = () => {
                         <label htmlFor="">Name*</label>
                         <input
                             type="text"
-                            placeholder="Your Name*"
+                            placeholder="Ditt namn*"
                             {...register("name")}
                             id="name"
                         />
@@ -87,7 +91,7 @@ const ContactForm = () => {
                         <label htmlFor="">Email*</label>
                         <input
                             type="email"
-                            placeholder="Email Address*"
+                            placeholder="Din e-postadress*"
                             {...register("email")}
                             id="email"
                         />
@@ -104,7 +108,7 @@ const ContactForm = () => {
                 <div className="col-12">
                     <div className="input-group-meta form-group mb-35">
                         <textarea
-                            placeholder="Your message*"
+                            placeholder="Ditt meddelande*"
                             {...register("message")}
                             id="message"
                         ></textarea>
