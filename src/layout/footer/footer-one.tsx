@@ -2,7 +2,7 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 // internal
-import logo from "@/assets/images/logo/logo_01.svg";
+import logo from "@/assets/images/logo/logo-1.png";
 import FooterSocial from "./footer-social";
 
 const FooterOne = () => {
@@ -19,8 +19,9 @@ const FooterOne = () => {
                                 ></Link>
                             </div>
                             <p className="text-white lh-sm mb-35">
-                                WebSolutions Serima hjälper företag i hela
-                                Sverige med moderna och enkla webblösningar.
+                                WebSolutions Serima hjälper alla, från
+                                privatpersoner till företag, i hela Sverige med
+                                moderna webblösningar.
                             </p>
                             {/* social link */}
                             <ul className="style-none d-flex align-items-center social-icon">
@@ -92,7 +93,8 @@ const FooterOne = () => {
               </ul> */}
                                 <div className="copyright me-xl-4 lg-mt-10 order-lg-first">
                                     Copyright @ {new Date().getFullYear()}{" "}
-                                    WebSolutions - Serima. All rights reserved.
+                                    WebSolutions - En del av Serima AB. All
+                                    rights reserved.
                                 </div>
                             </div>
                         </div>

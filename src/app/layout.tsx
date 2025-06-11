@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.scss";
+import favicon from "./favicon.ico";
 
 export const metadata: Metadata = {
     metadataBase: new URL("https://websolutions.serima.se"),
@@ -29,7 +30,7 @@ export const metadata: Metadata = {
         siteName: "WebSolutions Serima",
         images: [
             {
-                url: "https://websolutions.serima.se/assets/images/logo/ws.serima.png",
+                url: "https://websolutions.serima.se/assets/images/logo/logo-1.png",
                 width: 200,
                 height: 27,
                 alt: "WebSolutions Serima hemsida",
@@ -43,7 +44,7 @@ export const metadata: Metadata = {
         description:
             "WebSolutions Serima erbjuder avancerade webblösningar och modern webbutveckling för dig som vill stärka din digitala närvaro. Vi skapar skräddarsydda hemsidor, webbappar och digitala tjänster.",
         images: [
-            "https://websolutions.serima.se/assets/images/logo/ws.serima.png",
+            "https://websolutions.serima.se/assets/images/logo/logo-1.png",
         ],
     },
 };
@@ -53,8 +54,8 @@ const structuredData = {
     "@type": "LocalBusiness",
     name: "WebSolutions Serima",
     url: "https://websolutions.serima.se",
-    logo: "https://websolutions.serima.se/logo.png",
-    image: "https://websolutions.serima.se/og-image.png",
+    logo: "https://websolutions.serima.se/assets/images/logo/logo-1.png",
+    image: "https://websolutions.serima.se/assets/images/gallery/hero-4.png",
     description:
         "WebSolutions Serima erbjuder avancerade webblösningar och modern webbutveckling för dig som vill stärka din digitala närvaro. Vi specialiserar oss på skräddarsydda hemsidor, webbappar och digitala tjänster.",
     address: {
@@ -72,10 +73,7 @@ const structuredData = {
         availableLanguage: ["sv"],
     },
     openingHours: "Mo-Fr 08:00-17:00",
-    sameAs: [
-        "https://www.facebook.com/websolutions.serima",
-        "https://www.instagram.com/websolutions.serima",
-    ],
+    sameAs: ["https://www.instagram.com/websolutions.serima"],
 };
 
 export default function RootLayout({
@@ -92,6 +90,7 @@ export default function RootLayout({
                 />
                 <meta name="author" content="WebSolutions Serima" />
                 <link rel="canonical" href="https://websolutions.serima.se" />
+                <link rel="icon" href={favicon.src} />
                 {/* Structured data for SEO */}
                 <script
                     id="structured-data"
