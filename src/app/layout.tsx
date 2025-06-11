@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.scss";
 import favicon from "./favicon.ico";
+import { GoogleAnalytics } from "@next/third-parties/google";
 
 export const metadata: Metadata = {
     metadataBase: new URL("https://websolutions.serima.se"),
@@ -101,6 +102,7 @@ export default function RootLayout({
                 />
             </head>
             <body>{children}</body>
+            <GoogleAnalytics gaId="G-455LM51P5J" />
         </html>
     );
 }
