@@ -57,7 +57,7 @@ const FooterOne = () => {
                                     <Link href="/om-oss">Om oss</Link>
                                 </li>
                                 <li>
-                                    <Link href="/kontakta-oss">
+                                    <Link href="/kontaktaoss">
                                         Kontakta oss
                                     </Link>
                                 </li>

@@ -84,7 +84,7 @@ const TextFeatureOne = ({ style_2 = false }: { style_2?: boolean }) => {
                                         läs mer om oss
                                     </Link>
                                     <Link
-                                        href="/kontakta-oss"
+                                        href="/kontaktaoss"
                                         className="btn-three icon-link mt-15"
                                     >
                                         <span>få en offert</span>
@@ -137,7 +137,7 @@ const TextFeatureOne = ({ style_2 = false }: { style_2?: boolean }) => {
                                         konvertering.
                                     </p>
                                     <Link
-                                        href="/kontakta-oss"
+                                        href="/kontaktaoss"
                                         className="btn-three icon-link mt-15 md-mb-40"
                                     >
                                         <span>få en offert</span>

@@ -23,7 +23,7 @@ const FaqSectionOne = ({ cls }: { cls?: string }) => {
                                 <br className="d-none d-lg-block" /> Kontakta
                                 oss så återkommer vi så fort vi kan.
                             </p>
-                            <Link href="/kontakta-oss" className="btn-four">
+                            <Link href="/kontaktaoss" className="btn-four">
                                 kontakta oss
                             </Link>
                         </div>

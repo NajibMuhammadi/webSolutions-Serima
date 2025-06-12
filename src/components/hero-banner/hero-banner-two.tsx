@@ -57,7 +57,7 @@ const HeroBannerTwo = () => {
                             idag och i framtiden.
                         </p>
                         <Link
-                            href="/kontakta-oss"
+                            href="/kontaktaoss"
                             className="btn-two icon-link wow fadeInUp"
                             data-wow-delay="0.2s"
                         >
@@ -72,7 +72,7 @@ const HeroBannerTwo = () => {
                 </div>
             </div>
             <Link
-                href="/kontakta-oss"
+                href="/kontaktaoss"
                 className="more-btn rounded-circle d-flex align-items-center justify-content-center tran3s wow fadeInLeft"
                 target="_blank"
             >

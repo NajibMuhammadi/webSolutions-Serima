@@ -3,10 +3,8 @@ import React from "react";
 import Link from "next/link";
 import Image from "next/image";
 // internal
-import logo from "@/assets/images/logo/SerimaWebAb.png";
-import logo_2 from "@/assets/images/logo/SerimaWebAb.png";
-import icon_1 from "@/assets/images/icon/icon_14.svg";
-import icon_2 from "@/assets/images/icon/icon_15.svg";
+import logo from "@/assets/images/logo/logo-1.png";
+import logo_2 from "@/assets/images/logo/logo-1.png";
 import menu_data from "@/data/menu-data";
 import { usePathname } from "next/navigation";
 
@@ -17,10 +15,7 @@ const Navbar = ({ logo_white = false }: { logo_white?: boolean }) => {
             <li className="d-block d-lg-none">
                 <div className="logo">
                     <Link href="/" className="d-block text-white">
-                        {/* <Image src={logo_white?logo_2:logo} alt="logo" /> */}
-                        <h1 className="text-white fs-4 fw-bold">
-                            SERIMA-WEBSOLUTIONS
-                        </h1>
+                        <Image src={logo_white ? logo_2 : logo} alt="logo" />
                     </Link>
                 </div>
             </li>
@@ -108,7 +103,7 @@ const Navbar = ({ logo_white = false }: { logo_white?: boolean }) => {
             ))}
             <li className="d-md-none ps-2 pe-2">
                 <a
-                    href="/kontakta-oss"
+                    href="/kontaktaoss"
                     className="signup-btn-one icon-link w-100 mt-20"
                 >
                     <span className="flex-fill text-center">Få en offert</span>

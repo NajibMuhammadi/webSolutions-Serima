@@ -121,8 +121,8 @@ const PricingArea = () => {
                                     title="Grundläggande Drift"
                                     month="engångs"
                                     price="4 900"
-                                    desc="Idealisk för nystarter och enklare webbplatser som vill ha allt väsentligt på ett ställe."
-                                    membership="/år"
+                                    desc="Perfekt för nystartade företag och enklare webbplatser som vill ha en komplett och smidig lösning samlad på ett ställe."
+                                    membership="år"
                                     lists={[
                                         "Egen domän (.se, .com, etc.)",
                                         "Obegränsat antal e-postadresser",
@@ -139,7 +139,7 @@ const PricingArea = () => {
                                     title="Premium Drift"
                                     month="engångs"
                                     price="7 900"
-                                    membership="/år"
+                                    membership="år"
                                     desc="För växande företag som kräver mer avancerad support och regelbundet underhåll."
                                     lists={[
                                         "Allt i Grundpaket +",
@@ -166,7 +166,7 @@ const PricingArea = () => {
                                     month="engångs"
                                     price="6 900"
                                     desc="Perfekt för mindre projekt eller statiska webbplatser."
-                                    membership="/år"
+                                    membership="år"
                                     lists={[
                                         "Automatisk deployment (CI/CD)",
                                         "Global CDN (Snabb laddning överallt)",
@@ -182,7 +182,7 @@ const PricingArea = () => {
                                     title="Pro Drift"
                                     month="engångs"
                                     price="11 900"
-                                    membership="/år"
+                                    membership="år"
                                     desc="För kritiska applikationer och företagslösningar."
                                     lists={[
                                         "Allt i Standard +",
@@ -216,7 +216,7 @@ const PricingArea = () => {
                             </p>
                         </div>
                         <div className="col-lg-4 text-center text-lg-end">
-                            <Link href="/kontakta-oss" className="btn-four">
+                            <Link href="/kontaktaoss" className="btn-four">
                                 Kontakta oss
                             </Link>
                         </div>

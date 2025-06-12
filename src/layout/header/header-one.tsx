@@ -31,7 +31,7 @@ const HeaderOne = () => {
                                     <ul className="d-flex align-items-center style-none">
                                         <li className="d-none d-md-block">
                                             <Link
-                                                href="/contact"
+                                                href="/kontaktaoss"
                                                 className="btn-one tran3s"
                                             >
                                                 Få en offert

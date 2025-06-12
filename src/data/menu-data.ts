@@ -28,7 +28,7 @@ const menu_data: IMenu[] = [
     },
     {
         id: 5,
-        link: "/kontakta-oss",
+        link: "/kontaktaoss",
         title: "Kontakta oss",
         dropdown: false,
     },

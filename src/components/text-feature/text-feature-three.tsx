@@ -74,7 +74,7 @@ const TextFeatureThree = ({ style_2 }: { style_2?: boolean }) => {
                                 </p>
                                 <div>
                                     <Link
-                                        href="/kontakta-oss"
+                                        href="/kontaktaoss"
                                         className="btn-four mt-15"
                                     >
                                         Kontakta oss

@@ -51,7 +51,7 @@ const ServiceOneArea = () => {
                                 bakom.{" "}
                             </p>
                             <Link
-                                href="/contact"
+                                href="/kontaktaoss"
                                 className="btn-three icon-link mt-15 md-mb-60"
                             >
                                 <span>Kontakta oss</span>
